@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>Responsive</title>
+<style>
+div { width: 50%; height: 50%; float: left;
+position: center;}
+div { width: 50%; height: 50%; float: left; }
+@media (max-width: 1199px) {
+  .secl1, .secl2,
+  {
+    border: 1px;
+    float: left;
+  }
+  .secl1
+  {
+    width: 50%;
+  }
+  .secl2
+  {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px){
+  .secm
+  {
+    float: left;
+    border: 1px;
+  }
+  .secm
+  {
+    width: 50%;
+  }
+}
+.btn
+{
+  border: 1px solid;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+</style>
+<script type="text/javascript" src="D:\html\jav.js">
+</script>
+</head>
+<body>
+<div align="center" align="middle" class="secl1 secm">
+  <img src="C:\Users\saish\OneDrive\Pictures\assg1.png" width="400px" height="300px">
+</div>
+<div class="secl2 secm">
+  <h3>
+    Ashirvad aata -Whole wheat 10 kg pouch
+  <h4>  <b>Rs 399</b></h4>
+  </h3>
+  </br>
+  <h5>pack sizes</h5>
+  <button type="button" class="btn1 btn" value="399" onclick="val(399)" >10kg</br>
+    399
+  </button>
+  <button type="button" class="btn2 btn" value="209" onclick="val(209)" >5kg</br>
+    209
+  </button>
+  </br>
+  <p>Quantity
+    <button id="sub" onclick="sub()">-</button>
+    <input type="number" id="qnty"value="1" >
+    <button id="add" onclick="add()" >+</button>
+  </p>
+  </br>
+  <p><button type="button" onclick="validate(value)">Payable</button> =
+    <input type="text" id='amnt'>
+</div>
+<div align="center" class="secl1 secm">
+  <img src="C:\Users\saish\OneDrive\Pictures\assg3.png" width="400px" height="300px">
+</div>
+<div class="secl2 secm">
+  <img src="C:\Users\saish\OneDrive\Pictures\itm1.png">
+  <img src="C:\Users\saish\OneDrive\Pictures\itm2.png">
+  <img src="C:\Users\saish\OneDrive\Pictures\itm3.png">
+  <img src="C:\Users\saish\OneDrive\Pictures\itm4.png">
+  </div>
+</body>
+</html>
